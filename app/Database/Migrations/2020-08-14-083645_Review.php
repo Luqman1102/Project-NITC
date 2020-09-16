@@ -24,11 +24,11 @@ class Review extends Migration
 			],
 			'bintang'		=> [
 				'type'			=> 'Float',
-				'constraint'    => 2,
+				'constraint'    => 1,
 			],
-			'judul'			=> [
-				'type'			=> 'VARCHAR',
-				'constraint'	=> '100'
+			'id_produk'			=> [
+				'type'			=> 'INT',
+				'constraint'	=> 11
 			],
 		]);
 		$this->forge->addPrimaryKey('id');

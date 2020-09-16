@@ -34,12 +34,15 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 
 
+// $routes->get('Review/(:num)', 'Review::index/$1');
 
-
+$routes->get('/Produk/(:num)', 'Produk::detail/$1');
 $routes->group('', ['filter' => 'belumLogin'], function ($routes) {
 	$routes->get('/Logout', 'auth/Login::logout');
 	$routes->get('/Profile', 'User::profile');
 	$routes->post('/Profile', 'User::edit_profile');
+	$routes->get('Review/(:num)', 'Review::index/$1');
+	$routes->get('Reviews/(:num)', 'Review::TambahData/$1');
 });
 
 $routes->group('', ['filter' => 'sudahLogin'], function ($routes) {
