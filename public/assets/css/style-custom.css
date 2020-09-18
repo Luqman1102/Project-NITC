@@ -8,17 +8,17 @@
 
 .menu-aktif {
   font-weight: 500 !important;
-  color: #ff5c97 !important;
+  color: #f6a10a !important;
   padding-left: 5px;
 }
 
 .custom-file-label::after {
-  content: "Cari";
+  content: "Telusuri";
 }
 
 .thumbnail {
-  width: 200px; /* width of container */
-  height: 200px; /* height of container */
+  width: 200px;
+  height: 200px;
   object-fit: cover;
 }
 
@@ -165,4 +165,70 @@
 
 .card:hover.box-shadow {
   box-shadow: 0 0.125rem 0.25rem rgba(36, 130, 50, 0.075) !important;
+}
+
+.rating {
+  display: inline-block;
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  font-size: 50px;
+}
+
+.rating label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  cursor: pointer;
+}
+
+.rating label:last-child {
+  position: static;
+}
+
+.rating label:nth-child(1) {
+  z-index: 5;
+}
+
+.rating label:nth-child(2) {
+  z-index: 4;
+}
+
+.rating label:nth-child(3) {
+  z-index: 3;
+}
+
+.rating label:nth-child(4) {
+  z-index: 2;
+}
+
+.rating label:nth-child(5) {
+  z-index: 1;
+}
+
+.rating label input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.rating label .icon {
+  float: left;
+  color: transparent;
+}
+
+.rating label:last-child .icon {
+  color: #000;
+}
+
+.rating:not(:hover) label input:checked ~ .icon,
+.rating:hover label:hover input ~ .icon {
+  color: #ffbf00;
+}
+
+.rating label input:focus:not(:checked) ~ .icon:last-child {
+  color: #000;
+  text-shadow: 0 0 5px #ffbf00;
 }
