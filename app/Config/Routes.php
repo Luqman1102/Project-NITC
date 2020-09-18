@@ -32,14 +32,16 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-
+$routes->get('/about', 'Home::about');
+$routes->get('/services', 'Home::service');
 
 
 
 $routes->group('', ['filter' => 'belumLogin'], function ($routes) {
-	$routes->get('/Logout', 'auth/Login::logout');
-	$routes->get('/Profile', 'User::profile');
-	$routes->post('/Profile', 'User::edit_profile');
+	$routes->get('/logout', 'auth/Login::logout');
+	$routes->get('/profile', 'User::profile');
+	$routes->post('/profile', 'User::edit_profile');
+	$routes->get('/produk', 'Produk::index');
 });
 
 $routes->group('', ['filter' => 'sudahLogin'], function ($routes) {

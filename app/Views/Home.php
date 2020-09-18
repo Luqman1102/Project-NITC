@@ -1,63 +1,43 @@
 <?= $this->extend('layout/template'); ?>
 <?= $this->section('content'); ?>
 <main>
-
     <!-- Slider Area Start-->
+
+
     <div class="slider-area ">
         <div class="slider-active">
-            <div class="single-slider slider-height d-flex align-items-center" data-background="assets/img/hero/h1_hero.png">
+            <div class="single-slider slider-height d-flex align-items-center" data-background="<?= base_url() ?>/assets/img/hero/bg_hero.png">
                 <div class="container">
                     <div class="row d-flex align-items-center">
                         <div class="col-lg-7 col-md-9 ">
-                            <div class="hero__caption">
-                                <h1 data-animation="fadeInLeft" data-delay=".4s">We Collect<br> High Quality Leads</h1>
-                                <p data-animation="fadeInLeft" data-delay=".6s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravi.</p>
-                                <!-- Hero-btn -->
-                                <div class="hero__btn" data-animation="fadeInLeft" data-delay=".8s">
-                                    <a href="<?= base_url(); ?>/industries.html" class="btn hero-btn">Contact Us</a>
-                                </div>
+                            <h1 data-animation="fadeInLeft" data-delay=".4s">Ayo Serbu<br> Dapatkan Kualitas Terbaik</h1>
+                            <p data-animation="fadeInLeft" data-delay=".6s">Jasain menawarkan berbagai macam jasa
+                                dengan kualitas terbaik. Kamu bisa mendapatkan jasa yang yang kamu butuhkan dengan freelance berpengalaman. Ayo dapatkan sekarang</p>
+                            <!-- Hero-btn -->
+                            <div class="hero__btn" data-animation="fadeInLeft" data-delay=".8s">
+                                <a href="<?= base_url() ?>/RegisterPembeli" class="btn hero-btn">Daftar</a>
                             </div>
                         </div>
                         <div class="col-lg-5">
                             <div class="hero__img d-none d-lg-block" data-animation="fadeInRight" data-delay="1s">
-                                <img src="<?= base_url(); ?>/assets/img/hero/hero_right.png" alt="">
+                                <img src="<?= base_url() ?>/assets/img/hero/gambar-1.png" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="single-slider slider-height d-flex align-items-center" data-background="assets/img/hero/h1_hero.png">
-                <div class="container">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-lg-7 col-md-9 ">
-                            <div class="hero__caption">
-                                <h1 data-animation="fadeInLeft" data-delay=".4s">We Collect<br> High Quality Leads</h1>
-                                <p data-animation="fadeInLeft" data-delay=".6s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravi.</p>
-                                <!-- Hero-btn -->
-                                <div class="hero__btn" data-animation="fadeInLeft" data-delay=".8s">
-                                    <a href="<?= base_url(); ?>/industries.html" class="btn hero-btn">Contact Us</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5">
-                            <div class="hero__img d-none d-lg-block" data-animation="fadeInRight" data-delay="1s">
-                                <img src="<?= base_url(); ?>/assets/img/hero/hero_right.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
     <!-- Slider Area End-->
     <!-- What We do start-->
-    <div class="what-we-do we-padding">
+    <div class="what-we-do we-padding" id="layan">
         <div class="container">
             <!-- Section-tittle -->
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-8">
                     <div class="section-tittle text-center">
-                        <h2>What We Will Do For Your Business​</h2>
+                        <h2>Apa Yang Dapat kita Lakukan Untuk Anda?</h2>
                     </div>
                 </div>
             </div>
@@ -65,306 +45,160 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-do text-center mb-30">
                         <div class="do-icon">
-                            <span class="flaticon-tasks"></span>
+                            <span class="flaticon-project "></span>
                         </div>
                         <div class="do-caption">
-                            <h4>Link Building</h4>
-                            <p>Hunky dory barney fanny around up the duff no biggie loo cup of tea jolly good ruddy say arse!</p>
+                            <h4>Desain Logo</h4>
+                            <p>Tersedia jasa desain logo untuk memperkuat identitas brand perusahaan & merek Anda dari desainer freelance profesional dalam pembuatan logo online hanya di Jasain.com</p>
                         </div>
                         <div class="do-btn">
-                            <a href="<?= base_url(); ?>/#"><i class="ti-arrow-right"></i> get started</a>
+                            <a href="#"><i class="ti-arrow-right"></i> Dapatkan</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-do active text-center mb-30">
-                        <div class="do-icon">
-                            <span class="flaticon-social-media-marketing"></span>
+                        <div class="d-icon">
+                            <img src="<?= base_url() ?>/assets/img/icon/photo.png">
                         </div>
                         <div class="do-caption">
-                            <h4>Content marketing</h4>
-                            <p>Hunky dory barney fanny around up the duff no biggie loo cup of tea jolly good ruddy say arse!</p>
+                            <h4>Photoshop Editing</h4>
+                            <p>Jasain.com menyediakan ribuan freelancer kreatif yang berpengalaman di bidang jasa edit foto menggunakan photoshop. Di sini, Anda bisa memilih freelancer berdasarkan harga.</p>
                         </div>
                         <div class="do-btn">
-                            <a href="<?= base_url(); ?>/#"><i class="ti-arrow-right"></i> get started</a>
+                            <a href="#"><i class="ti-arrow-right"></i> Dapatkan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-do text-center mb-30">
+                        <div class="d-icon">
+                            <img src="<?= base_url() ?>/assets/img/icon/instagram.png">
+                        </div>
+                        <div class="do-caption">
+                            <h4>Design Feed Instagram</h4>
+                            <p>Menyediakan jasa desain feed instagram untuk kamu yang ingin hits di sosial media atau ingin menjadi selebgram. Kamu bisa mencari ribuan desain feed instagram dengan selera kamu</p>
+                        </div>
+                        <div class="do-btn">
+                            <a href="#"><i class="ti-arrow-right"></i> Dapatkan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-do text-center mb-30">
+                        <div class="d-icon">
+                            <img src="<?= base_url() ?>/assets/img/icon/invitation.png">
+                        </div>
+                        <div class="do-caption">
+                            <h4>Undangan Pernikahan</h4>
+                            <p>Tersedia jasa desain undangan pernikahan unik dari freelancer profesional di Jasain. Buat kartu undangan pernikahan berkualitas dengan harga terjangkau dan sesuai seleramu. </p>
+                        </div>
+                        <div class="do-btn">
+                            <a href="satu"><i class="ti-arrow-right"></i> Dapatkan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-do active text-center mb-30">
+                        <div class="d-icon">
+                            <img src="<?= base_url() ?>/assets/img/icon/id-card.png">
+                        </div>
+                        <div class="do-caption">
+                            <h4>Kartu ID</h4>
+                            <p>Jasain menyediakan jasa desain kartu nama dengan harga terjangkau. Semua dikerjakan oleh freelancer berpengalaman dalam pembuatan kartu nama. Yuk dapatkan sekarang </p>
+                        </div>
+                        <div class="do-btn">
+                            <a href="#"><i class="ti-arrow-right"></i> Dapatkan</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-do text-center mb-30">
                         <div class="do-icon">
-                            <span class="flaticon-project"></span>
-                        </div>
-                        <div class="do-caption">
-                            <h4>On Page SEO</h4>
-                            <p>Hunky dory barney fanny around up the duff no biggie loo cup of tea jolly good ruddy say arse!</p>
+
                         </div>
                         <div class="do-btn">
-                            <a href="<?= base_url(); ?>/#"><i class="ti-arrow-right"></i> get started</a>
+                            <br><br><br><br><a href="services.html"><i class="ti-arrow-right"></i>
+                                <h3>Lainnya</h3>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- What We do End-->
-    <!-- We Create Start -->
-    <div class="we-create-area create-padding">
-        <div class="container">
-            <div class="row d-flex align-items-end">
-                <div class="col-lg-6 col-md-12">
-                    <div class="we-create-img">
-                        <img src="<?= base_url(); ?>/assets/img//service/we-create.png" alt="">
-                    </div>
+    </div>
+</main>
+<!-- What We do End-->
+<!-- We Create Start -->
+<div class="we-create-area create-padding">
+    <div class="container">
+        <div class="row d-flex align-items-end">
+            <div class="col-lg-6 col-md-12">
+                <div class="we-create-img">
+                    <img src="<?= base_url() ?>/assets/img/hero/gambar-2.png" alt="">
                 </div>
-                <div class="col-lg-6 col-md-12">
-                    <div class="we-create-cap">
-                        <h3>We Create a Steps to Build a Successful Digital Product</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis orem ipsum dolor sit amet, consectetur adipiscing.</p>
-                        <a href="<?= base_url(); ?>/#" class="btn">Contact Us</a>
-                    </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="we-create-cap">
+                    <h3>Jasa Desain Digital Printing Cepat dan Berkualitas</h3>
+                    <p>Digital printing merupakan sebuah teknik percetakan dari desain gambar dan teks berbasis digital yang bisa langsung dicetak dengan berbagai media secara cepat dan mudah. Jasain.com menyediakan jasa desain digital printing untuk berbagai kebutuhan dari desainer freelance berpengalaman dalam membuat desain brosur, desain kartu nama, desain undangan, maupun desain spanduk dengan harga terjangkau.</p>
+                    <a href="#" class="btn">Dapatkan Sekarang</a>
                 </div>
             </div>
         </div>
     </div>
-    <!-- We Create End -->
-    <!-- Generating Start -->
-    <div class="generating-area ">
-        <div class="container">
+</div>
+<!-- We Create End -->
+<!-- Generating Start -->
+<!-- Testimonial Start -->
+<div class="testimonial-area">
+    <div class="container">
+        <div class="testimonial-main">
             <!-- Section-tittle -->
             <div class="row d-flex justify-content-center">
-                <div class="col-lg-8">
+                <div class="col-lg-5  col-md-8 pr-0">
                     <div class="section-tittle text-center">
-                        <h2>Generating New Customers Via Online Mode​​</h2>
+                        <h2>Mengapa pakai Jasain.com?</h2>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="single-generating d-flex mb-30">
-                        <div class="generating-icon">
-                            <span class="flaticon-chart"></span>
-                        </div>
-                        <div class="generating-cap">
-                            <h4>All Sizes Business</h4>
-                            <p>Seddo eiusmod tempor incididunt labore lore magna aliqua uisipsum suspendis incididun
-                                se ultrices gravida. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single-generating d-flex mb-30">
-                        <div class="generating-icon">
-                            <span class="flaticon-social-media-marketing"></span>
-                        </div>
-                        <div class="generating-cap">
-                            <h4>Awesome Results</h4>
-                            <p>Seddo eiusmod tempor incididunt labore lore magna aliqua uisipsum suspendis incididun
-                                se ultrices gravida. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single-generating d-flex mb-30">
-                        <div class="generating-icon">
-                            <span class="flaticon-speaker"></span>
-                        </div>
-                        <div class="generating-cap">
-                            <h4>Keep you in the Loop</h4>
-                            <p>Seddo eiusmod tempor incididunt labore lore magna aliqua uisipsum suspendis incididun
-                                se ultrices gravida. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="single-generating d-flex mb-30">
-                        <div class="generating-icon">
-                            <span class="flaticon-growth"></span>
-                        </div>
-                        <div class="generating-cap">
-                            <h4>Significant ROI</h4>
-                            <p>Seddo eiusmod tempor incididunt labore lore magna aliqua uisipsum suspendis incididun
-                                se ultrices gravida. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Generating End -->
-    <!--Choose Best start-->
-    <div class="choose-best choose-padding">
-        <div class="container">
-            <!-- Section-tittle -->
             <div class="row d-flex justify-content-center">
-                <div class="col-lg-7">
-                    <div class="section-tittle text-center">
-                        <h2>Choose Your Very Best Pricing Plan </h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-choose text-center mb-30">
-                        <div class="do-icon">
-                            <span class="flaticon-growth"></span>
-                        </div>
-                        <div class="do-caption">
-                            <h4>$ 05.00</h4>
-                            <ul>
-                                <li>Increase traffic 50%</li>
-                                <li>Social Media Marketing</li>
-                                <li>10 Free Optimization</li>
-                                <li>24/7 support</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-choose active text-center mb-30">
-                        <div class="do-icon">
-                            <span class="flaticon-award"></span>
-                        </div>
-                        <div class="do-caption">
-                            <h4>$ 20.00</h4>
-                            <ul>
-                                <li>Increase traffic 50%</li>
-                                <li>Social Media Marketing</li>
-                                <li>10 Free Optimization</li>
-                                <li>24/7 support</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-choose text-center mb-30">
-                        <div class="do-icon">
-                            <span class="flaticon-project"></span>
-                        </div>
-                        <div class="do-caption">
-                            <h4>$ 30.00</h4>
-                            <ul>
-                                <li>Increase traffic 50%</li>
-                                <li>Social Media Marketing</li>
-                                <li>10 Free Optimization</li>
-                                <li>24/7 support</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Choose Best do End-->
-    <!-- Visit Stuffs Start -->
-    <div class="visit-area fix visite-padding">
-        <div class="container">
-            <!-- Section-tittle -->
-            <div class="row d-flex justify-content-center">
-                <div class="col-lg-6 pr-0">
-                    <div class="section-tittle text-center">
-                        <h2>Visit Some Of Our Awsome Stuffs</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid p-0">
-            <div class="row ">
-                <div class="col-lg-3 col-md-4">
-                    <div class="single-visited mb-30">
-                        <div class="visited-img">
-                            <img src="<?= base_url(); ?>/assets/img/visit/visit_1.jpg" alt="">
-                        </div>
-                        <div class="visited-cap">
-                            <h3><a href="<?= base_url(); ?>/#">citmv.com</a></h3>
-                            <p>Email Marketing</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                    <div class="single-visited mb-30">
-                        <div class="visited-img">
-                            <img src="<?= base_url(); ?>/assets/img/visit/visit_2.jpg" alt="">
-                        </div>
-                        <div class="visited-cap">
-                            <h3><a href="<?= base_url(); ?>/#">mvsp.net</a></h3>
-                            <p>Email Marketing</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                    <div class="single-visited mb-30">
-                        <div class="visited-img">
-                            <img src="<?= base_url(); ?>/assets/img/visit/visit_3.jpg" alt="">
-                        </div>
-                        <div class="visited-cap">
-                            <h3><a href="<?= base_url(); ?>/#">dmcal.co</a></h3>
-                            <p>Email Marketing</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4">
-                    <div class="single-visited mb-30">
-                        <div class="visited-img">
-                            <img src="<?= base_url(); ?>/assets/img/visit/visit_4.jpg" alt="">
-                        </div>
-                        <div class="visited-cap">
-                            <h3><a href="<?= base_url(); ?>/#">dmco.net</a></h3>
-                            <p>Email Marketing</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Visit Stuffs Start -->
-    <!-- Testimonial Start -->
-    <div class="testimonial-area">
-        <div class="container">
-            <div class="testimonial-main">
-                <!-- Section-tittle -->
-                <div class="row d-flex justify-content-center">
-                    <div class="col-lg-5  col-md-8 pr-0">
-                        <div class="section-tittle text-center">
-                            <h2>What Client Say About Us</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row d-flex justify-content-center">
-                    <div class="col-lg-10 col-md-9">
-                        <div class="h1-testimonial-active">
-                            <!-- Single Testimonial -->
-                            <div class="single-testimonial text-center">
-                                <div class="testimonial-caption ">
-                                    <div class="testimonial-top-cap">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                <div class="col-lg-10 col-md-9">
+                    <div class="h1-testimonial-active">
+                        <!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <div class="testimonial-caption ">
+                                <div class="testimonial-top-cap">
+                                    <p>Tidak harus mengeluarkan modal alias Free (hanya menggunakan komputer dan koneksi internet). Selain itu, Jasain.com dikerjakan oleh freelancer yang berpengalaman. Kamu bisa mendapatkan pelayanan sesuai dengan yang anda butuhkan</p>
+                                </div>
+                                <!-- founder -->
+                                <div class="testimonial-founder d-flex align-items-center justify-content-center">
+                                    <div class="founder-img">
+
                                     </div>
-                                    <!-- founder -->
-                                    <div class="testimonial-founder d-flex align-items-center justify-content-center">
-                                        <div class="founder-img">
-                                            <img src="<?= base_url(); ?>/assets/img/testmonial/testimonial.png" alt="">
-                                        </div>
-                                        <div class="founder-text">
-                                            <span>Oliva jems</span>
-                                            <p>UIX designer</p>
-                                        </div>
+                                    <div class="founder-text">
+
                                     </div>
                                 </div>
-                            </div><!-- Single Testimonial -->
-                            <div class="single-testimonial text-center">
-                                <div class="testimonial-caption ">
-                                    <div class="testimonial-top-cap">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                            </div>
+                        </div><!-- Single Testimonial -->
+                        <div class="single-testimonial text-center">
+                            <div class="testimonial-caption ">
+                                <div class="testimonial-top-cap">
+                                    <p>Sistem mudah untuk dimengerti dan mudah digunakan. Anda bisa menjadi penjual atau pembeli jasa ngan sistem yang ada di Jasain.com. Selain itu, harga di Jasain.com juga terjangkau untuk kalangan menengah kebawah seperti mpelajar dan mahasiswa </p>
+                                </div>
+                                <!-- founder -->
+                                <div class="testimonial-founder d-flex align-items-center justify-content-center">
+                                    <div class="founder-img">
+
                                     </div>
-                                    <!-- founder -->
-                                    <div class="testimonial-founder d-flex align-items-center justify-content-center">
-                                        <div class="founder-img">
-                                            <img src="<?= base_url(); ?>/assets/img/testmonial/testimonial.png" alt="">
-                                        </div>
-                                        <div class="founder-text">
-                                            <span>Oliva jems</span>
-                                            <p>UIX designer</p>
-                                        </div>
+                                    <div class="founder-text">
+
                                     </div>
                                 </div>
                             </div>
@@ -374,81 +208,31 @@
             </div>
         </div>
     </div>
-    <!-- Testimonial End -->
-    <!-- Tips Triks Start -->
-    <div class="tips-triks-area tips-padding">
-        <div class="container">
-            <!-- Section-tittle -->
-            <div class="row d-flex justify-content-center">
-                <div class="col-lg-6 col-md-8 pr-0">
-                    <div class="section-tittle text-center">
-                        <h2>Tips and Tricks From Our Exparts</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-6">
-                    <div class="single-tips mb-50">
-                        <div class="tips-img">
-                            <img src="<?= base_url(); ?>/assets/img/tips/tips_1.jpg" alt="">
-                        </div>
-                        <div class="tips-caption">
-                            <h4><a href="<?= base_url(); ?>/#">Twice profit than before you ever got</a></h4>
-                            <span>Continue Reading</span>
-                            <p>March 3, 2020</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6">
-                    <div class="single-tips mb-50">
-                        <div class="tips-img">
-                            <img src="<?= base_url(); ?>/assets/img/tips/tips_2.jpg" alt="">
-                        </div>
-                        <div class="tips-caption">
-                            <h4><a href="<?= base_url(); ?>/#">Twice profit than before you ever got</a></h4>
-                            <span>Continue Reading</span>
-                            <p>March 3, 2020</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6">
-                    <div class="single-tips mb-50">
-                        <div class="tips-img">
-                            <img src="<?= base_url(); ?>/assets/img/tips/tips_3.jpg" alt="">
-                        </div>
-                        <div class="tips-caption">
-                            <h4><a href="<?= base_url(); ?>/#">Twice profit than before you ever got</a></h4>
-                            <span>Continue Reading</span>
-                            <p>March 3, 2020</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Tips Triks End -->
-    <!-- have-project Start-->
-    <div class="have-project">
-        <div class="container">
-            <div class="haveAproject" data-background="assets/img/team/have.jpg">
-                <div class="row d-flex align-items-center">
-                    <div class="col-xl-7 col-lg-9 col-md-12">
-                        <div class="wantToWork-caption">
-                            <h2>Have project in mind?</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut.</p>
-                        </div>
-                    </div>
-                    <div class="col-xl-5 col-lg-3 col-md-12">
-                        <div class="wantToWork-btn f-right">
-                            <a href="<?= base_url(); ?>/#" class="btn btn-ans">Contact Us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+</div>
+<!-- Testimonial End -->
 
+<!-- have-project Start-->
+<div class="have-project">
+    <div class="container">
+        <div class="haveAproject" data-background="<?= base_url() ?>/assets/img/team/have.jpg">
+            <div class="row d-flex align-items-center">
+                <div class="col-xl-7 col-lg-9 col-md-12">
+                    <div class="wantToWork-caption">
+                        <h2>Apa bakat design anda?</h2>
+                        <p>Ayo peroleh penghasilan dengan bakat anda dengan menjadi freelance di Jasain.com. Kamu bisa menjadi penyedia jasa dengan bakat yang kamu miliki. Tunggu apa lagi? Ayo daftarkan dirimu sekarang </p>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-3 col-md-12">
+                    <div class="wantToWork-btn f-right">
+                        <a href="<?= base_url() ?>/RegisterPenjual" class="btn btn-ans">Menjadi Penjual</a>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
-    <!-- have-project End -->
+</div>
+<!-- have-project End -->
 
 </main>
 <?= $this->endSection(); ?>

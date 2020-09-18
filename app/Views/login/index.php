@@ -35,8 +35,8 @@
                         <h2 class="contact-title">Register</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto nesciunt delectus obcaecati blanditiis eligendi ut exercitationem sequi provident alias nemo voluptatum illo odio eum, ex sapiente fugiat enim, corporis porro.</p>
                         <div class="d-inline">
-                            <a href="/RegisterPembeli" class="button button-contactForm boxed-btn">Pembeli</a>
-                            <a href="/RegisterPenjual" class="button button-contactForm boxed-btn">Penjual</a>
+                            <a href="<?= base_url() ?>/RegisterPembeli" class="button button-contactForm boxed-btn">Pembeli</a>
+                            <a href="<?= base_url() ?>/RegisterPenjual" class="button button-contactForm boxed-btn">Penjual</a>
                         </div>
                     </div>
                 </div>

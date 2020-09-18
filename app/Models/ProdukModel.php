@@ -15,4 +15,9 @@ class ProdukModel extends Model
         }
         return $this->where(['id'=>$id])->first();
     }
+
+    public function produk($id = false)
+    {
+        if($id == false )
+    }
 }

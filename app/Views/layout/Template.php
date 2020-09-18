@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="manifest" href="<?= base_url(); ?>/site.webmanifest">
-    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url(); ?>/assets/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url(); ?>/assets/img/logo/logo.png">
 
     <!-- CSS here -->
     <link rel="stylesheet" href="<?= base_url(); ?>/assets/css/bootstrap.min.css">
@@ -34,7 +34,7 @@
     <footer>
 
         <!-- Footer Start-->
-        <div class="footer-main" data-background="assets/img/shape/footer_bg.png">
+        <div class="footer-main" data-background="<?= base_url(); ?>/assets/img/shape/footer_bg.png">
             <div class="footer-area footer-padding">
                 <div class="container">
                     <div class="row d-flex justify-content-between">
@@ -43,61 +43,55 @@
                                 <div class="single-footer-caption mb-30">
                                     <!-- logo -->
                                     <div class="footer-logo">
-                                        <a href="<?= base_url(); ?>/index.html"><img src="<?= base_url(); ?>/assets/img/logo/logo2_footer.png" alt=""></a>
+                                        <a href="index.html"><img src="<?= base_url(); ?>/assets/img/logo/logojasain.png" alt=""></a>
                                     </div>
                                     <div class="footer-tittle">
                                         <div class="footer-pera">
-                                            <p class="info1">221B Baker Street, P.O Box 353 Park <br> Road, USA - 215431</p>
-                                            <p class="info2">info@yourdomain.com</p>
+                                            <p class="info1"> <br> </p>
+                                            <p class="info2">info@Jasain.com</p>
                                         </div>
                                     </div>
                                     <div class="footer-social">
-                                        <a href="<?= base_url(); ?>/#"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="<?= base_url(); ?>/#"><i class="fab fa-twitter"></i></a>
-                                        <a href="<?= base_url(); ?>/#"><i class="fas fa-globe"></i></a>
-                                        <a href="<?= base_url(); ?>/#"><i class="fab fa-behance"></i></a>
+                                        <a href="https://id-id.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+                                        <a href="https://mail.google.com/mail/"><i class="fas fa-envelope"></i></a>
+                                        <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-5 col-sm-7">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Tetang kita</h4>
+                                    <ul>
+                                        <p>Jasain.com menyediakan berbagai macam jasa mulai dari kebutuhan kelas menengah kebawah sampai kebutuhan kelas menengah keatas. Dapatkan fitur menarik di Jasain.com</p>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-2 col-md-4 col-sm-5">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
-                                    <h4>Quick Links</h4>
+                                    <h4>Tautan</h4>
                                     <ul>
-                                        <li><a href="<?= base_url(); ?>/about.html">About</a></li>
-                                        <li><a href="<?= base_url(); ?>/about.html">Features</a></li>
-                                        <li><a href="<?= base_url(); ?>/single-blog.html">Pricing</a></li>
-                                        <li><a href="<?= base_url(); ?>/blog.html">Blog</a></li>
-                                        <li><a href="<?= base_url(); ?>/contact.html">Contact</a></li>
+                                        <li><a href="about.html">Lain-lain</a></li>
+                                        <li><a href="#layan" ata-animation="fadeIn scrollUp" data-delay="1s">Layanan</a></li>
+                                        <li><a href="services.html">Harga</a></li>
+                                        <li><a href="services.html">Kategori</a></li>
+
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2 col-md-4 col-sm-7">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
                             <div class="single-footer-caption mb-50">
                                 <div class="footer-tittle">
-                                    <h4>Support</h4>
+                                    <h4>Kontak</h4>
                                     <ul>
-                                        <li><a href="<?= base_url(); ?>/#">Privacy Policy</a></li>
-                                        <li><a href="<?= base_url(); ?>/#">Terms & Conditions</a></li>
-                                        <li><a href="<?= base_url(); ?>/#"> Sitemap</a></li>
-                                        <li><a href="<?= base_url(); ?>/#">FAQs</a></li>
-                                        <li><a href="<?= base_url(); ?>/#">Report a bugb</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-4 col-sm-5">
-                            <div class="single-footer-caption mb-50">
-                                <div class="footer-tittle">
-                                    <h4>Core Features</h4>
-                                    <ul>
-                                        <li><a href="<?= base_url(); ?>/#">Email Marketing</a></li>
-                                        <li><a href="<?= base_url(); ?>/#"> Offline SEO</a></li>
-                                        <li><a href="<?= base_url(); ?>/#">Social Media Marketing</a></li>
-                                        <li><a href="<?= base_url(); ?>/#">Lead Generation</a></li>
-                                        <li><a href="<?= base_url(); ?>/#"> 24/7 Support</a></li>
+                                        <li><a href="https://web.whatsapp.com/">+62 882-1147-3717</a></i></li>
+                                        <li><a href="https://web.whatsapp.com/">+62 857-3682-7475</a></i></li>
+                                        <li><a href="https://myaccount.google.com/">auliask104@gmail.com</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -116,7 +110,7 @@
                                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                         Copyright &copy;<script>
                                             document.write(new Date().getFullYear());
-                                        </script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="<?= base_url(); ?>/https://colorlib.com" target="_blank">Colorlib</a>
+                                        </script> Seluruh hak cipta | Dibuat oleh <a href="https://colorlib.com" target="_blank">Jasain.com</a>
                                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                     </p>
                                 </div>

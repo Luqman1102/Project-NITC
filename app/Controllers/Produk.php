@@ -8,11 +8,11 @@ class Produk extends BaseController
 	public function index()
 	{
 		$data = [
-            'title' => "Produk",
+			'title' => "Produk",
 			'produk' => $this->produkModel->paginate(1),
 			'pager' => $this->produkModel->pager,
-        ];
-		return view('produk/index', $data);
+		];
+		return view('daftarProduk', $data);
 	}
 
 	public function tambah()
@@ -26,7 +26,7 @@ class Produk extends BaseController
 
 	public function insert()
 	{
-		if(!$this->validate([
+		if (!$this->validate([
 			'judul' => [
 				'rules' => 'required|is_unique[produk.judul]',
 				'errors' => [
@@ -61,7 +61,7 @@ class Produk extends BaseController
 					'mime_in' => 'Bukan Gambar'
 				]
 			]
-		])){
+		])) {
 			$validation = \Config\Services::validation();
 			return redirect()->to('/produk/tambah')->withInput()->with('validation', $validation);
 		}
@@ -87,8 +87,8 @@ class Produk extends BaseController
 	public function detail($id)
 	{
 		$data = [
-            'title' => "Produk",
-            'detail' => $this->produkModel->getProduk($id)
+			'title' => "Produk",
+			'detail' => $this->produkModel->getProduk($id)
 		];
 		return view('produk/detail', $data);
 	}
@@ -96,23 +96,23 @@ class Produk extends BaseController
 	public function edit($id)
 	{
 		$data = [
-            'title' => "Produk",
+			'title' => "Produk",
 			'produk' => $this->produkModel->getProduk($id),
 			'validation' => \Config\Services::validation()
-        ];
+		];
 		return view('produk/edit', $data);
 	}
 
 	public function update()
 	{
 		$produkLama = $this->produkModel->getProduk($this->request->getVar('id'));
-		if($produkLama['judul'] == $this->request->getVar('judul')){
+		if ($produkLama['judul'] == $this->request->getVar('judul')) {
 			$rule_judul = 'required';
-		}else{
+		} else {
 			$rule_judul = 'required|is_unique[produk.judul]';
 		}
 
-        if(!$this->validate([
+		if (!$this->validate([
 			'judul' => [
 				'rules' => $rule_judul,
 				'errors' => [
@@ -146,18 +146,18 @@ class Produk extends BaseController
 					'mime_in' => 'Bukan Gambar'
 				]
 			]
-		])){
+		])) {
 			$validation = \Config\Services::validation();
-			return redirect()->to('/produk/edit'. $this->request->getVar('id'))->withInput()->with('validation', $validation);
+			return redirect()->to('/produk/edit' . $this->request->getVar('id'))->withInput()->with('validation', $validation);
 		}
 
 		// ambil gambar
 		$fileMedia = $this->request->getFile('media');
 
 		// cek gambar, apakah tetap gambar lama
-		if($fileMedia->getError() == 4){
+		if ($fileMedia->getError() == 4) {
 			$namaMedia = $this->request->getVar('mediaLama');
-		}else{
+		} else {
 			// pindahkan gambar ke folder images
 			$fileMedia->move('images');
 
@@ -165,7 +165,7 @@ class Produk extends BaseController
 			$namaMedia = $fileMedia->getName();
 
 			// hapus gambar lama
-			unlink('images/'.$this->request->getVar('mediaLama'));
+			unlink('images/' . $this->request->getVar('mediaLama'));
 		}
 
 		$this->produkModel->save([
@@ -187,7 +187,7 @@ class Produk extends BaseController
 		$produk = $this->produkModel->find($id);
 
 		// hapus gambar
-		unlink('images/'. $produk['media']);
+		unlink('images/' . $produk['media']);
 
 		$this->produkModel->delete($id);
 		session()->setFlashData('pesan', 'Data berhasil dihapus.');
