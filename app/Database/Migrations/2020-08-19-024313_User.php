@@ -47,6 +47,7 @@ class User extends Migration
 				'constraint'	 => ['penjual', 'pembeli'],
 				'default'		 => null,
 			],
+
 			'nama_rekening'		 => [
 				'type' 			 => 'VARCHAR',
 				'constraint' 	 => '20',
@@ -55,6 +56,7 @@ class User extends Migration
 				'type' 			 => 'VARCHAR',
 				'constraint' 	 => '20',
 			]
+
 		]);
 		$this->forge->addPrimaryKey('id');
 		$this->forge->addPrimaryKey('username');

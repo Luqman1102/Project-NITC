@@ -4,7 +4,7 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img src="<?= base_url();?>/assets/img/logo/logo.png" alt="">
+                    <img src="<?= base_url();?>/assets/img/logo/logojasain.png" alt="">
                 </div>
             </div>
         </div>
@@ -20,7 +20,7 @@
                         <!-- Logo -->
                         <div class="col-xl-2 col-lg-2 col-md-1">
                             <div class="logo">
-                                <a href="<?= base_url();?>/index.html"><img src="<?= base_url();?>/assets/img/logo/logo.png" alt=""></a>
+                                <a href="<?= base_url();?>"><img src="<?= base_url();?>/assets/img/logo/logojasain.png" alt=""></a>
                             </div>
                         </div>
                         <div class="col-xl-8 col-lg-8 col-md-8">
@@ -28,28 +28,18 @@
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav> 
                                     <ul id="navigation">    
-                                        <li><a href="<?= base_url();?>/index.html"> Home</a></li>
-                                        <li><a href="<?= base_url();?>/about.html">About Us</a></li>
-                                        <li><a href="<?= base_url();?>/services.html">Services</a></li>
-                                        <li><a href="<?= base_url();?>/contact.html">Contact</a></li>
-                                        <li><a href="<?= base_url();?>/blog.html">Blog</a>
-                                            <ul class="submenu">
-                                                <li><a href="<?= base_url();?>/blog.html">Blog</a></li>
-                                                <li><a href="<?= base_url();?>/single-blog.html">Blog Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="<?= base_url();?>/#">Pages</a>
-                                            <ul class="submenu">
-                                                <li><a href="<?= base_url();?>/elements.html">Element</a></li>
-                                            </ul>
-                                        </li>
+                                        <li><a href="<?= base_url();?>"> Beranda</a></li>
+                                        <li><a href="<?= base_url();?>">Tentang kita</a></li>
+                                        <li><a href="<?= base_url();?>">Layanan</a></li>
+                                        <li><a href="<?= base_url();?>">Menjadi Penjual</a>
+                                        <li><a href="<?= base_url();?>">Masuk</a>
                                     </ul>
                                 </nav>
                             </div>
                         </div>             
                         <div class="col-xl-2 col-lg-2 col-md-3">
                             <div class="header-right-btn f-right d-none d-lg-block">
-                                <a href="<?= base_url();?>/#" class="btn header-btn">Contact Us</a>
+                                <a href="<?= base_url();?>/#" class="btn header-btn">Daftar</a>
                             </div>
                         </div>
                         <!-- Mobile Menu -->

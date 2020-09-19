@@ -34,6 +34,7 @@ class Pesanan extends Migration
 				'type'			=> 'VARCHAR',
 				'constraint'	=> '25',
 			],
+
 			'jumlah_revisi'				=> [
 				'type'			=> 'INT',
 				'constraint'	=> 11
@@ -42,6 +43,7 @@ class Pesanan extends Migration
 				'type'			=> 'INT',
 				'constraint'	=> 11
 			],
+
 			'gambar_asli'		=> [
 				'type'			=> 'VARCHAR',
 				'constraint'	=> '255',
@@ -50,6 +52,7 @@ class Pesanan extends Migration
 				'type'			=> 'VARCHAR',
 				'constraint'	=> '255',
 			],
+
 			'nama_rekening'  => [
 				'type'			=> 'VARCHAR',
 				'constraint'	=> '20',
@@ -62,6 +65,7 @@ class Pesanan extends Migration
 				'type'			=> 'VARCHAR',
 				'constraint'	=> '255',
 			]
+
 		]);
 		$this->forge->addPrimaryKey('id');
 		$this->forge->createTable('pesanan');

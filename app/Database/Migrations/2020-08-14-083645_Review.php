@@ -15,30 +15,30 @@ class Review extends Migration
 				'unsigned'       => true,
 				'auto_increment' => true,
 			],
-			'Username'       => [
+			'username'       => [
 				'type'           => 'VARCHAR',
 				'constraint'     => '100',
 			],
 			'isi'			=> [
 				'type'			 => 'Text',
 			],
-			'Bintang'		=> [
-				'type'			=> 'INT',
+			'bintang'		=> [
+				'type'			=> 'Float',
 				'constraint'    => 2,
 			],
-			'Judul'			=> [
+			'judul'			=> [
 				'type'			=> 'VARCHAR',
 				'constraint'	=> '100'
 			],
 		]);
 		$this->forge->addPrimaryKey('id');
-		$this->forge->createTable('Review');
+		$this->forge->createTable('review');
 	}
 
 	//--------------------------------------------------------------------
 
 	public function down()
 	{
-		$this->forge->dropTable('Review');
+		$this->forge->dropTable('review');
 	}
 }

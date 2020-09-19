@@ -15,38 +15,42 @@ class Produk extends Migration
 				'unsigned'       => true,
 				'auto_increment' => true,
 			],
-			'Judul'       => [
+			'judul'       => [
 				'type'           => 'VARCHAR',
 				'constraint'     => '100',
 			],
-			'Media'       => [
+			'media'       => [
 				'type'           => 'VARCHAR',
 				'constraint'     => '100',
 			],
-			'Deskripsi_Produk'       => [
+			'deskripsi_produk'       => [
 				'type'           => 'Text',
 			],
-			'Kategori'       => [
+			'kategori'       => [
 				'type'           => 'VARCHAR',
 				'constraint'     => '100',
 			],
-			'Username'       => [
+			'username'       => [
 				'type'           => 'VARCHAR',
 				'constraint'     => '100',
 			],
-			'Harga'       => [
+			'harga'       => [
 				'type'           => 'INT',
 				'constraint'     => 11,
 			],
+			'jumlah_revisi' => [
+				'type'			 => 'INT',
+				'constraint'	 => 11,
+			],
 		]);
 		$this->forge->addPrimaryKey('id');
-		$this->forge->createTable('Produk');
+		$this->forge->createTable('produk');
 	}
 
 	//--------------------------------------------------------------------
 
 	public function down()
 	{
-		$this->forge->dropTable('Produk');
+		$this->forge->dropTable('produk');
 	}
 }
