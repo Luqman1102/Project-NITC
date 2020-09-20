@@ -15,21 +15,25 @@ class Review extends Migration
 				'unsigned'       => true,
 				'auto_increment' => true,
 			],
-			'username'       => [
+			'judul'			=> [
+				'type'			=> 'VARCHAR',
+				'constraint'	=> '100'
+			],
+			'username_pembeli'       => [
 				'type'           => 'VARCHAR',
 				'constraint'     => '100',
 			],
-			'isi'			=> [
-				'type'			 => 'Text',
+			'username_penjual'       => [
+				'type'           => 'VARCHAR',
+				'constraint'     => '100',
 			],
 			'bintang'		=> [
 				'type'			=> 'Float',
 				'constraint'    => 2,
 			],
-			'judul'			=> [
-				'type'			=> 'VARCHAR',
-				'constraint'	=> '100'
-			],
+			'isi'			=> [
+				'type'			 => 'Text',
+			]
 		]);
 		$this->forge->addPrimaryKey('id');
 		$this->forge->createTable('review');
