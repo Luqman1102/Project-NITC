@@ -34,7 +34,8 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 
 
-// $routes->get('Review/(:num)', 'Review::index/$1');
+$routes->get('produk/(:any)', 'Produk::detail/$1');
+$routes->post('ulasan', 'Review::Tambahulasan');
 
 $routes->get('/Produk/(:num)', 'Produk::detail/$1');
 $routes->group('', ['filter' => 'belumLogin'], function ($routes) {

@@ -12,31 +12,40 @@ class Review extends BaseController
         $this->ReviewModel = new ReviewModel();
     }
 
-    public function index($id)
+    public function Tambahulasan()
     {
-        $username = session('username');
-        $bintang = $this->ReviewModel->bintang($id);
-        $data = [
-            'title' => 'Review Page',
-            'review' => $this->ReviewModel->getReview($id)->getResult(),
-            'reviewku' => $this->ReviewModel->myReview($username),
-            'bintang' => $bintang,
-            'hasil' => ceil($bintang->bintang),
-        ];
-        return view('Review', $data);
-    }
+        $id_produk = $this->request->getPost('id_produk');
+        $num = (int) $id_produk;
+        if (!$this->validate([
+            'isi' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => '{field} harus diisi',
 
-    public function TambahData($id)
-    {
-        $username = session('username');
-        $review = $this->ReviewModel->getReview($id)->getResult();
-        foreach ($review as $r) {
-            $user = $r->username;
+                ]
+            ],
+        ])) {
+            $validation = \Config\Services::validation();
+            return redirect()->to('produk/' . $num)->withInput()->with('validation', $validation);
         }
-        if ($user == $username) {
-            echo ("sudahAda");
-        } elseif ($user != $username) {
-            echo ("Belum ada");
+        $judul = $this->request->getPost('judul');
+        $username_pembeli = $this->request->getPost('username_pembeli');
+        $username_penjual = $this->request->getPost('username_penjual');
+        $stars = $this->request->getPost('stars');
+        if ($stars == null) {
+            $bintang = 0;
+        } else {
+            $bintang = $stars;
         }
+        $isi = $this->request->getPost('isi');
+        $this->ReviewModel->save([
+            'judul' => $judul,
+            'username_pembeli' => $username_pembeli,
+            'username_penjual' => $username_penjual,
+            'bintang' => $bintang,
+            'isi' => $isi,
+            'id_produk' => $id_produk,
+        ]);
+        return redirect()->to('/');
     }
 }
