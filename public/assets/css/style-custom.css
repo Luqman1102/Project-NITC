@@ -12,6 +12,18 @@
   padding-left: 5px;
 }
 
+.boxed-btn-jasain {
+  color: #128a68 !important;
+  border: 1px solid #128a68;
+  color: #128a68;
+}
+
+.boxed-btn-jasain:hover {
+  background: #128a68;
+  color: #fff !important;
+  border: 1px solid #128a68;
+}
+
 .custom-file-label::after {
   content: "Telusuri";
 }
@@ -23,13 +35,11 @@
 }
 
 .star-rating-s15 {
-
   background-image: url(/assets/img/icon/icn-master-ratings-stars-dd1e58ea1d685f280e62395e479994a3.svg),
     url(/assets/img/icon/icn-master-ratings-stars-dd1e58ea1d685f280e62395e479994a3.svg),
     url(/assets/img/icon/icn-master-ratings-stars-dd1e58ea1d685f280e62395e479994a3.svg),
     url(/assets/img/icon/icn-master-ratings-stars-dd1e58ea1d685f280e62395e479994a3.svg),
     url(/assets/img/icon/icn-master-ratings-stars-dd1e58ea1d685f280e62395e479994a3.svg);
-
   background-repeat: no-repeat;
   background-size: 15px 45px;
   display: inline-block;
@@ -104,16 +114,48 @@
   font-size: 15px;
 }
 
+.thumbnail-product {
+  height: 150px;
+}
+
 @media (min-width: 992px) {
   .col-lg-25 {
     flex: 0 0 20%;
     max-width: 20%;
-    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
-.thumbnail-product {
-  height: 150px;
+@media (min-width: 481px) and (max-width: 991px) {
+  .thumbnail-product {
+    height: 250px;
+  }
+  .mb-sm-6 {
+    margin-bottom: 5rem;
+  }
+  .section-tittle-sm h2 {
+    font-size: 35px;
+  }
+  .section-tittle-sm span::before {
+    width: 20px;
+    left: -30px;
+  }
+  .input-group-sm {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .p-sm-0 {
+    padding: 0 !important;
+  }
+  .slider-area .hero__img img {
+    max-width: 455px;
+    max-height: 436px;
+    margin: auto;
+  }
+  .logo a img {
+    margin-top: 5px !important;
+  }
 }
 
 @media (min-width: 330px) and (max-width: 480px) {
@@ -123,11 +165,59 @@
   .shadow {
     box-shadow: none !important;
   }
-
+  .section-tittle-sm h2 {
+    font-size: 35px;
+  }
+  .section-tittle-sm span::before {
+    width: 20px;
+    left: -30px;
+  }
+  .input-group-sm {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .p-sm-0 {
+    padding: 0 !important;
+  }
+  .font-size-sm-3 {
+    font-size: 1.5rem !important;
+  }
+  .mb-sm-6 {
+    margin-bottom: 4rem;
+  }
+  .d-sm-none {
+    display: none !important;
+  }
+  .genric-btn-sm {
+    line-height: 1rem;
+    padding: 0 1rem;
+  }
+  .slider-area .hero__img img {
+    max-width: 308px;
+    max-height: 296px;
+    margin: auto;
+  }
+  .mt-sm-2 {
+    margin-top: 0.5rem !important;
+  }
+  .text-sm-center {
+    text-align: center !important;
+  }
+  .logo a img {
+    margin-top: 0px !important;
+  }
+  .services-area {
+    padding-top: 75px;
+  }
 }
 
 .product-cover {
   object-fit: cover;
+}
+
+.product-contain {
+  object-fit: contain;
 }
 
 .card-teks {
@@ -146,14 +236,12 @@
   -webkit-box-orient: vertical;
 }
 
-
 .card-body {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   min-height: 1px;
   padding: 1.25rem;
 }
-
 
 .card:hover .card-teks {
   color: #248232;
@@ -246,4 +334,32 @@
 .rating label input:focus:not(:checked) ~ .icon:last-child {
   color: #000;
   text-shadow: 0 0 5px #ffbf00;
+}
+
+.blog-pagination .page-item.active .page-link {
+  background-color: #128a68;
+  border-color: #fff;
+  color: #fff;
+}
+
+.img-overlay {
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.img-overlay:hover {
+  -webkit-filter: brightness(0.8);
+  filter: brightness(0.8);
+}
+
+.round-left {
+  border-top-left-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+.logo a img {
+  max-width: 128px;
+  margin-top: -10px;
 }
