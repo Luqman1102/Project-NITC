@@ -7,8 +7,8 @@ class Home extends BaseController
 	public function index()
 	{
 		$data = [
-			'title' => "Home Page"
+			'title' => "Marketplace Jasa Indonesia | Jasain"
 		];
-		return view('Home', $data);
+		return view('beranda/beranda', $data);
 	}
 }
