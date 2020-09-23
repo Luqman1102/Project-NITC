@@ -16,7 +16,7 @@ class Register extends BaseController
     public function index_pembeli()
     {
         $data = [
-            'title' => "Register Pembeli",
+            'title' => "Register Pembeli | Jasain",
             'validation' => \Config\Services::validation(),
         ];
 
@@ -64,7 +64,7 @@ class Register extends BaseController
             ],
         ])) {
             $validation = \Config\Services::validation();
-            return redirect()->to('/RegisterPembeli')->withInput()->with('validation', $validation);
+            return redirect()->to('/register-pembeli')->withInput()->with('validation', $validation);
         }
         $username = $this->request->getPost('username');
         $email = $this->request->getPost('email');
@@ -87,14 +87,14 @@ class Register extends BaseController
             session()->set('role', $role);
             return redirect()->to('/');
         } else {
-            return redirect()->to('/RegisterPembeli');
+            return redirect()->to('/register-pembeli');
         }
     }
 
     public function index_penjual()
     {
         $data = [
-            'title' => "Register Penjual",
+            'title' => "Register Penjual | Jasain",
             'validation' => \Config\Services::validation(),
         ];
 
@@ -142,7 +142,7 @@ class Register extends BaseController
             ],
         ])) {
             $validation = \Config\Services::validation();
-            return redirect()->to('/RegisterPenjual')->withInput()->with('validation', $validation);
+            return redirect()->to('/register-penjual')->withInput()->with('validation', $validation);
         }
         $username = $this->request->getPost('username');
         $email = $this->request->getPost('email');
@@ -165,7 +165,7 @@ class Register extends BaseController
             session()->set('role', $role);
             return redirect()->to('/');
         } else {
-            return redirect()->to('/RegisterPenjual');
+            return redirect()->to('/register-penjual');
         }
     }
 }

@@ -16,7 +16,7 @@ class Login extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Login Page',
+            'title' => 'Login | Jasain',
             'validation' => \Config\Services::validation(),
         ];
 
@@ -42,7 +42,7 @@ class Login extends BaseController
             ]
         ])) {
             $validation = \Config\Services::validation();
-            return redirect()->to('/Login')->withInput()->with('validation', $validation);
+            return redirect()->to('/login')->withInput()->with('validation', $validation);
         }
         $username = $this->request->getPost('username');
         $password = $this->request->getPost('password');
@@ -54,13 +54,13 @@ class Login extends BaseController
             return redirect()->to('/');
         } else {
             session()->setFlashdata('error', 'Username dan Password Salah');
-            return redirect()->to('/Login');
+            return redirect()->to('/login');
         }
     }
 
     public function logout()
     {
         session()->destroy();
-        return redirect()->to('/Login');
+        return redirect()->to('/login');
     }
 }
