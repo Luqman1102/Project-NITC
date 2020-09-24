@@ -37,7 +37,7 @@
                     </div>
                     <h2 class="my-3 mt-5">Ulasan</h2>
                     <?php
-                    if ($kondisi == Null) : ?>
+                    if ($kondisi == Null && session('username') != Null) : ?>
                         <div class="row">
                             <div class="col-sm-auto">
                                 <form action="/ulasan" method="POST">
