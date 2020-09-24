@@ -44,7 +44,7 @@ class Checkout extends BaseController
 		}
 
 		$data= [
-			'title' => 'Checkout '.$produk['username'].' | Jasain',
+			'title' => 'Checkout',
 			'validation' => \Config\Services::validation(),
 			'produk' =>$produk,
 			'bintang' => $rataBintang,
@@ -121,7 +121,7 @@ class Checkout extends BaseController
 	public function upload($id)
 	{
 		$data = [
-			'title' => "Upload Bukti Pembayaran | Jasain",
+			'title' => "Upload Bukti Pembayaran",
 			'validation' => \Config\Services::validation(),
 			'id' => $id
 		];
@@ -157,7 +157,7 @@ class Checkout extends BaseController
 			'bukti_pembayaran' => $namaMedia
 		]);
 		session()->setFlashData('pesan', 'Pesanan berhasil dikonfirmasi.');
-		return redirect()->to('/');
+		return redirect()->to('/checkout/index/1');
 	}
 
 }

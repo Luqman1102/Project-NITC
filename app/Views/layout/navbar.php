@@ -4,7 +4,7 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img src="<?= base_url();?>/assets/img/logo/logo-jasain.png" alt="">
+                    <img src="<?= base_url();?>/assets/img/logo/logojasain.png" alt="">
                 </div>
             </div>
         </div>
@@ -20,26 +20,26 @@
                         <!-- Logo -->
                         <div class="col-xl-2 col-lg-2 col-md-1">
                             <div class="logo">
-                                <a href="<?= base_url();?>"><img src="<?= base_url();?>/assets/img/logo/logo-jasain.png" alt=""></a>
+                                <a href="<?= base_url();?>"><img src="<?= base_url();?>/assets/img/logo/logojasain.png" alt=""></a>
                             </div>
                         </div>
                         <div class="col-xl-8 col-lg-8 col-md-8">
                             <!-- Main-menu -->
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav> 
-                                    <ul id="navigation">
-                                        <li><a href="<?= base_url();?>">Beranda</a></li>
-                                        <li><a href="<?= base_url();?>/layanan">Layanan</a></li>
-                                        <li><a href="<?= base_url();?>/kategori">Kategori</a>
-                                        <li><a href="<?= base_url();?>/tentang-kami">Tentang Kami</a></li>
-                                        <li><a href="<?= base_url();?>/login" class="d-lg-none d-sm-block">Login</a></li>
+                                    <ul id="navigation">    
+                                        <li><a href="<?= base_url();?>"> Beranda</a></li>
+                                        <li><a href="<?= base_url();?>">Tentang kita</a></li>
+                                        <li><a href="<?= base_url();?>">Layanan</a></li>
+                                        <li><a href="<?= base_url();?>">Menjadi Penjual</a>
+                                        <li><a href="<?= base_url();?>">Masuk</a>
                                     </ul>
                                 </nav>
                             </div>
                         </div>             
                         <div class="col-xl-2 col-lg-2 col-md-3">
                             <div class="header-right-btn f-right d-none d-lg-block">
-                                <a href="<?= base_url();?>/login" class="btn header-btn">Login</a>
+                                <a href="<?= base_url();?>/#" class="btn header-btn">Daftar</a>
                             </div>
                         </div>
                         <!-- Mobile Menu -->

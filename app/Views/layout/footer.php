@@ -1,7 +1,7 @@
 <footer>
 
 <!-- Footer Start-->
-<div class="footer-main" data-background="<?= base_url()?>/assets/img/shape/footer_bg.png">
+<div class="footer-main" data-background="assets/img/shape/footer_bg.png">
  <div class="footer-area footer-padding">
      <div class="container">
          <div class="row d-flex justify-content-between">
@@ -9,15 +9,15 @@
                 <div class="single-footer-caption mb-50">
                   <div class="single-footer-caption mb-30">
                        <!-- logo -->
-                      <div class="footer-logo logo">
-                          <a href="index.html"><img src="<?= base_url()?>/assets/img/logo/logo-jasain.png" alt=""></a>
+                      <div class="footer-logo">
+                          <a href="index.html"><img src="<?= base_url()?>/assets/img/logo/logojasain.png" alt=""></a>
                       </div>
-                      <!-- <div class="footer-tittle">
+                      <div class="footer-tittle">
                           <div class="footer-pera">
                               <p class="info1"> <br> </p>
-                              <p class="info2">info@Jasain</p>
+                              <p class="info2">info@Jasain.com</p>
                          </div>
-                      </div> -->
+                      </div>
                       <div class="footer-social">
                          <a href="https://id-id.facebook.com"><i class="fab fa-facebook-f"></i></a>
                          <a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
@@ -30,9 +30,9 @@
              <div class="col-lg-3 col-md-5 col-sm-7">
                  <div class="single-footer-caption mb-50">
                      <div class="footer-tittle">
-                         <h4 style="color: #37654b;">Tetang kita</h4>
+                         <h4>Tetang kita</h4>
                          <ul>
-                            <p>Jasain menyediakan berbagai macam jasa mulai dari kebutuhan kelas menengah kebawah sampai kebutuhan kelas menengah keatas. Dapatkan fitur menarik di Jasain</p>
+                            <p>Jasain.com menyediakan berbagai macam jasa mulai dari kebutuhan kelas menengah kebawah sampai kebutuhan kelas menengah keatas. Dapatkan fitur menarik di Jasain.com</p>
                          </ul>
                      </div>
                  </div>
@@ -40,12 +40,12 @@
              <div class="col-lg-2 col-md-4 col-sm-5">
                  <div class="single-footer-caption mb-50">
                      <div class="footer-tittle">
-                         <h4 style="color: #37654b;">Tautan</h4>
+                         <h4>Tautan</h4>
                          <ul>
-                             <li><a href="<?= base_url()?>">Beranda</a></li>
-                             <li><a href="<?= base_url()?>/layanan">Layanan</a></li>
-                             <li><a href="<?= base_url()?>/kategori">Kategori</a></li>
-                             <li><a href="<?= base_url()?>/tentang-kami">Tentang Kami</a></li>
+                           <li><a href="about.html">Lain-lain</a></li>
+                             <li><a href="#layan" ata-animation="fadeIn scrollUp" data-delay="1s">Layanan</a></li>
+                             <li><a href="services.html">Harga</a></li>
+                             <li><a href="services.html">Kategori</a></li>
                              
                       </ul>
                      </div>
@@ -54,11 +54,11 @@
              <div class="col-lg-3 col-md-4 col-sm-6">
                  <div class="single-footer-caption mb-50">
                      <div class="footer-tittle">
-                         <h4 style="color: #37654b;">Kontak</h4>
+                         <h4>Kontak</h4>
                          <ul>
-                             <li><a href="https://web.whatsapp.com/">+62 110-1987-6543</a></i></li>
-                             <li><a href="https://web.whatsapp.com/">+62 345-6789-1011</a></i></li>
-                             <li><a href="https://myaccount.google.com/">jasain@gmail.com</a></li>
+                             <li><a href="https://web.whatsapp.com/">+62 882-1147-3717</a></i></li>
+                             <li><a href="https://web.whatsapp.com/">+62 857-3682-7475</a></i></li>
+                             <li><a href="https://myaccount.google.com/">auliask104@gmail.com</a></li>
                       </ul>
                      </div>
                  </div>
@@ -74,7 +74,7 @@
                   <div class="col-xl-12 ">
                       <div class="footer-copy-right text-center">
                           <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> | Dibuat oleh <a href="https://jasain.my.id" target="_blank">Jasain</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Seluruh hak cipta | Dibuat oleh <a href="https://colorlib.com" target="_blank">Jasain.com</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                       </div>
                   </div>

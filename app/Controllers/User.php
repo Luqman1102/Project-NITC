@@ -72,7 +72,7 @@ class User extends BaseController
                 ],
             ])) {
                 $validation = \Config\Services::validation();
-                return redirect()->to('/profile')->withInput()->with('validation', $validation);
+                return redirect()->to('/Profile')->withInput()->with('validation', $validation);
             }
             $this->UserModel->save([
                 'id' => $id,
@@ -82,7 +82,7 @@ class User extends BaseController
                 'nama_belakang' => $nama_belakang,
             ]);
             session()->setFlashData('pesan', 'Profile berhasil diubah.');
-            return redirect()->to('/profile');
+            return redirect()->to('/Profile');
         } elseif (session('role') == 'penjual') {
             if (!$this->validate([
                 'username' => [
@@ -118,7 +118,7 @@ class User extends BaseController
                 ],
             ])) {
                 $validation = \Config\Services::validation();
-                return redirect()->to('/profile')->withInput()->with('validation', $validation);
+                return redirect()->to('/Profile')->withInput()->with('validation', $validation);
             }
             $this->UserModel->save([
                 'id' => $id,
@@ -130,7 +130,7 @@ class User extends BaseController
                 'no_rekening' => $no_rekening,
             ]);
             session()->setFlashData('pesan', 'Profile berhasil diubah.');
-            return redirect()->to('/profile');
+            return redirect()->to('/Profile');
         }
     }
 }

@@ -20,7 +20,7 @@ $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('Home');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
-$routes->set404Override(function(){return view('404');});
+$routes->set404Override();
 $routes->setAutoRoute(true);
 
 /**
@@ -33,24 +33,26 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
-$routes->get('/tentang-kami', 'TentangKami::index');
-$routes->get('/kategori/(:segment)', 'Kategori::layanan/$1');
 
+$routes->get('produk/(:any)', 'Produk::detail/$1');
+$routes->post('ulasan', 'Review::Tambahulasan');
+
+$routes->get('/Produk/(:num)', 'Produk::detail/$1');
 $routes->group('', ['filter' => 'belumLogin'], function ($routes) {
-	$routes->get('/logout', 'auth/Login::logout');
-	$routes->get('/profile', 'User::profile');
-	$routes->post('/profile', 'User::edit_profile');
-  $routes->get('produk/(:any)', 'Produk::detail/$1');
-  $routes->post('ulasan', 'Review::Tambahulasan');
+	$routes->get('/Logout', 'auth/Login::logout');
+	$routes->get('/Profile', 'User::profile');
+	$routes->post('/Profile', 'User::edit_profile');
+	$routes->get('Review/(:num)', 'Review::index/$1');
+	$routes->get('Reviews/(:num)', 'Review::TambahData/$1');
 });
 
 $routes->group('', ['filter' => 'sudahLogin'], function ($routes) {
-	$routes->get('/register-pembeli', 'auth/Register::index_pembeli');
-	$routes->post('/register-pembeli', 'auth/Register::register_pembeli');
-	$routes->get('/register-penjual', 'auth/Register::index_penjual');
-	$routes->post('/register-penjual', 'auth/Register::register_penjual');
-	$routes->get('/login', 'auth/Login::index');
-	$routes->post('/login', 'auth/Login::Login');
+	$routes->get('/RegisterPembeli', 'auth/Register::index_pembeli');
+	$routes->post('/RegisterPembeli', 'auth/Register::register_pembeli');
+	$routes->get('/RegisterPenjual', 'auth/Register::index_penjual');
+	$routes->post('/RegisterPenjual', 'auth/Register::register_penjual');
+	$routes->get('/Login', 'auth/Login::index');
+	$routes->post('/Login', 'auth/Login::Login');
 });
 
 

@@ -9,7 +9,7 @@
                         <h2>Checkout</h2>
                     </div>
                     <div class="col-lg-8">
-                        <div class="card border-0 p-sm-0 rounded-lg shadow">
+                        <div class="card border-0 rounded-lg shadow">
                             <div class="row no-gutters">
                                 <div class="col-md-4 p-2">
                                 <img src="<?= base_url()?>/assets/images/media-produk/<?= $produk['media']?>" class="card-img product-cover  thumbnail-product" alt="">
@@ -46,7 +46,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="nama_rekening">Nama Pengirim di Rekening Bank</label>
+                                <label for="nama_rekening">Atas Nama</label>
                                 <input name="nama_rekening" type="text" class="form-control <?= ($validation->hasError('nama_rekening')) ? 'is-invalid' : ''; ?>" id="nama_rekening" value="<?= old('nama_rekening') ?>">
                                 <div class="invalid-feedback">
                                     <?= $validation->getError('nama_rekening'); ?>
