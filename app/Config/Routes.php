@@ -20,7 +20,9 @@ $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('Home');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
-$routes->set404Override(function(){return view('404');});
+$routes->set404Override(function () {
+	return view('404');
+});
 $routes->setAutoRoute(true);
 
 /**
@@ -36,12 +38,13 @@ $routes->get('/', 'Home::index');
 $routes->get('/tentang-kami', 'TentangKami::index');
 $routes->get('/kategori/(:segment)', 'Kategori::layanan/$1');
 
+$routes->get('produk/(:any)', 'Produk::detail/$1');
+
 $routes->group('', ['filter' => 'belumLogin'], function ($routes) {
 	$routes->get('/logout', 'auth/Login::logout');
 	$routes->get('/profile', 'User::profile');
 	$routes->post('/profile', 'User::edit_profile');
-  $routes->get('produk/(:any)', 'Produk::detail/$1');
-  $routes->post('ulasan', 'Review::Tambahulasan');
+	$routes->post('ulasan', 'Review::Tambahulasan');
 });
 
 $routes->group('', ['filter' => 'sudahLogin'], function ($routes) {
