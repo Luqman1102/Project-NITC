@@ -31,7 +31,11 @@
                             </div>
                             <h4 class="mt-5"><i class="fa fa-clock" aria-hidden="true"></i> <?= $detail["jumlah_revisi"]; ?> Revisi</h4>
                             <div class="text-center mt-5">
-                                <a href="#" class="btn btn-success">Beli</a>
+                                <?php if (session('username') == NULL) { ?>
+                                    <a href="/login" class="btn btn-success">Beli</a>
+                                <?php } else { ?>
+                                    <a href="#" class="btn btn-success">Beli</a>
+                                <?php } ?>
                             </div>
                         </div>
                     </div>
