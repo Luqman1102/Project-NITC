@@ -29,7 +29,11 @@ class Review extends Migration
 			],
 			'bintang'		=> [
 				'type'			=> 'Float',
-				'constraint'    => 2,
+				'constraint'    => 1,
+			],
+			'id_produk'			=> [
+				'type'			=> 'INT',
+				'constraint'	=> 11
 			],
 			'isi'			=> [
 				'type'			 => 'Text',

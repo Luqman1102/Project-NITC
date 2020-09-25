@@ -2,6 +2,23 @@
   color: #fff;
 }
 
+.carousel-item {
+  padding: 50px;
+}
+.carousel-item img {
+  max-width: 500px;
+  max-height: 500px;
+  margin: auto;
+  transition: transform 0.5s ease;
+}
+.carousel-item img:hover {
+  transform: scale(1.2);
+}
+
+.btn:hover {
+  color: #fff;
+}
+
 .menu-tidak-aktif {
   font-weight: 400 !important;
 }
@@ -165,6 +182,7 @@
   .shadow {
     box-shadow: none !important;
   }
+
   .section-tittle-sm h2 {
     font-size: 35px;
   }
@@ -315,6 +333,7 @@
   top: 0;
   left: 0;
   opacity: 0;
+  left: 50%;
 }
 
 .rating label .icon {
@@ -335,6 +354,22 @@
   color: #000;
   text-shadow: 0 0 5px #ffbf00;
 }
+
+.textarea-review {
+  border: solid 1px black !important;
+  border-width: 0 0 1px 0 !important;
+  background-color: transparent !important;
+  background-image: none !important;
+
+  border-radius: 0 !important;
+  box-shadow: 0 !important;
+  display: block !important;
+  font-size: 15px !important;
+  height: 45px !important;
+  line-height: 1 !important;
+  padding: 5px 20px 20px 14px;
+  width: 100%;
+  box-shadow: none !important;
 
 .blog-pagination .page-item.active .page-link {
   background-color: #128a68;
