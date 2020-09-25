@@ -62,7 +62,7 @@
                                 <img src="<?= base_url()?>/assets/img/icon/pay.png">
                             </div>
                             <div class="do-caption">
-                                <p>Sistem pembayaran yang paling aman dan praktis. dilengkapi dengan bank transfer lokal BCA, Mandiri, BRI, Mandiri dan CIMB</p>
+                                <p>Sistem pembayaran yang paling aman dan praktis. Dilengkapi dengan bank transfer lokal BCA, Mandiri, BRI, Mandiri, Mega dan Danamon.</p>
                             </div>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                             <img src="<?= base_url()?>/assets/img/icon/medal.png">
                             </div>
                             <div class="do-caption">
-                                <p>Jasa dengan kualitas terbaik. Anda bisa memilih jasa sesuai selera anda yang dibuat freelance yang berpengalaman</p>
+                                <p>Jasa dengan kualitas terbaik. Anda bisa memilih jasa sesuai selera anda yang dibuat freelance yang berpengalaman.</p>
                             </div>
                         </div>
                     </div>
