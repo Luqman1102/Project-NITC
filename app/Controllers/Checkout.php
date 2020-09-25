@@ -84,25 +84,25 @@ class Checkout extends BaseController
 			'no_rekening' => [
 				'rules' => 'required',
 				'errors' => [
-					'required' => '{field} produk harus diisi.'
+					'required' => 'Nomor Rekening harus diisi.'
 				]
 			],
 			'nama_rekening' => [
 				'rules' => 'required',
 				'errors' => [
-					'required' => '{field} produk harus diisi.'
+					'required' => 'Nama Rekening harus diisi.'
 				]
 			]
 		])){
 			$validation = \Config\Services::validation();
-			return redirect()->to('/produk/detailProduk')->withInput()->with('validation', $validation);
+			return redirect()->to('/checkout/index/'.$this->request->getVar('id'))->withInput()->with('validation', $validation);
         }
         
 		date_default_timezone_set('Asia/Jakarta');
 		
 		$this->pesananModel->save([
 			'judul' => $this->request->getVar('judul'),
-			'username_pembeli' => "session_username",
+			'username_pembeli' => session('username'),
 			'username_penjual' => $this->request->getVar('username'),
 			'tanggal' => date("Y-m-d H:i:s"),
 			'status' => "dipesan",
@@ -135,7 +135,7 @@ class Checkout extends BaseController
 			'bukti_pembayaran' => [
 				'rules' => 'uploaded[bukti_pembayaran]|max_size[bukti_pembayaran,5120]|is_image[bukti_pembayaran]|mime_in[bukti_pembayaran,image/jpg,image/jpeg,image/png]',
 				'errors' => [
-					'uploaded' => '{field} produk harus diisi.',
+					'uploaded' => 'Bukti pembayaran harus diisi.',
 					'max_size' => 'Ukuran gambar melebihi 5MB',
 					'is_image' => 'Mohon masukkan gambar',
 					'mime_in' => 'Mohon masukkan gambar'
